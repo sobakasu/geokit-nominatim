@@ -2,9 +2,9 @@
 
 Nominatim geocoding provider for geokit.
 
-GeoKit: http://geokit.rubyforge.org/
-Nominatim: http://wiki.openstreetmap.org/wiki/Nominatim
-MapQuest service: http://developer.mapquest.com/web/products/open/nominatim
+- GeoKit: http://geokit.rubyforge.org/
+- Nominatim: http://wiki.openstreetmap.org/wiki/Nominatim
+- MapQuest service: http://developer.mapquest.com/web/products/open/nominatim
 
 == Synopsis
 
