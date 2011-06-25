@@ -1,6 +1,27 @@
 = geokit-nominatim
 
-Description goes here.
+Nominatim geocoding provider for geokit.
+
+GeoKit: http://geokit.rubyforge.org/
+Nominatim: http://wiki.openstreetmap.org/wiki/Nominatim
+MapQuest service: http://developer.mapquest.com/web/products/open/nominatim
+
+== Synopsis
+
+Set up nominatim as a geocoder provider
+
+   Geokit::Geocoders::provider_order = [:nominatim]
+
+Set the address of the Nominatim server to use.
+see http://developer.mapquest.com/web/products/open/nominatim for usage policy.
+
+   Geokit::Geocoders::NominatimGeocoder.server = "open.mapquestapi.com/nominatim/v1/search"
+
+geocode an address
+
+   include Geokit::Geocoders
+   res = MultiGeocoder.geocode('100 Spear st, San Francisco, CA')
+   puts res.ll # ll=latitude,longitude
 
 == Contributing to geokit-nominatim
  
@@ -14,6 +35,6 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2011 Andrew Williams. See LICENSE.txt for
-further details.
+Copyright (c) 2011 Andrew Williams.
+See LICENSE.txt for further details.
 

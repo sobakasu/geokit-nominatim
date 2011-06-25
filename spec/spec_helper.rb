@@ -10,3 +10,8 @@ Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 RSpec.configure do |config|
   
 end
+
+unless ENV['NOMINATIM_SERVER']
+  puts "NOMINATIM_SERVER environment setting required"
+  exit 1
+end

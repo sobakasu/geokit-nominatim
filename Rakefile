@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "geokit-nominatim"
   gem.homepage = "http://github.com/sobakasu/geokit-nominatim"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Nominatim geocoding provider for geokit}
+  gem.description = %Q{Nominatim geocoding provider for geokit}
   gem.email = "sobakasu@gmail.com"
   gem.authors = ["Andrew Williams"]
   # dependencies defined in Gemfile
