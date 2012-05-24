@@ -32,6 +32,7 @@ class Geokit::Geocoders::NominatimGeocoder < Geokit::Geocoders::Geocoder
 
     # parse response
     xml = server_res.body
+    xml = xml.force_encoding('utf-8') if xml.respond_to?(:force_encoding)
     logger.debug "nominatim geocoding. Address: #{address}. Result: #{xml}"
     self.parse_response(xml, res)
     res
