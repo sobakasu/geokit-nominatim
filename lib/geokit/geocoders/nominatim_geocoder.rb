@@ -23,7 +23,7 @@ class Geokit::Geocoders::NominatimGeocoder < Geokit::Geocoders::Geocoder
     opts = options.merge(:q => address_str, :limit => 1,
                          :format => :xml, :addressdetails => 1)
     opts.delete(:server)
-    params = opts.collect { |k,v| "#{k}=#{escape(v)}" }.join("&")
+    params = opts.collect { |k,v| "#{k}=#{URI.escape(v.to_s)}" }.join("&")
 
     # send query
     url = "#{server}?#{params}"
