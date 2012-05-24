@@ -1,0 +1,9 @@
+v1.0.1 2012/05/24
+
+- Merge pull request #2 from ya-jeks/master 
+- Merge pull request #1 from inossidabile/master 
+- got rid of jeweler, added VERSION constant to NominatimGeocoder class
+
+v1.0.0 2011/06/24
+
+- initial version
